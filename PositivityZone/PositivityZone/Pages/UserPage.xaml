@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PositivityZone.Pages.UserPage"
+             BackgroundImageSource="bg">
+    <Grid Padding="0,20,0,20">
+        <!-- Columns: 6; Rows: 10 -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <ImageButton
+            x:Name="buttonBack"
+            Grid.Row="0"
+            Grid.Column="0"
+            Source="backarrow_icon"
+            BackgroundColor="#00FFFFFF"
+            Margin="10,0,0,0"/>
+
+        <ImageButton
+            x:Name="buttonInfo"
+            Grid.Row="0"
+            Grid.Column="5"
+            Source="info_icon"
+            BackgroundColor="#00FFFFFF"
+            Margin="0,0,10,0"/>
+        
+        <Label
+            x:Name="labelUser"
+            Text="Strings.labelUser"
+            FontSize="25"
+            FontAttributes="Bold"
+            Grid.Row="0"
+            Grid.Column="2"
+            Grid.ColumnSpan="2"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center"
+            TextColor="#FFFFFF"/>
+
+        <Label
+            x:Name="labelUIDInfo"
+            Text="Strings.labelUIDInfo"
+            FontSize="18"
+            FontAttributes="Bold"
+            Grid.Row="1"
+            Grid.Column="1"
+            Grid.ColumnSpan="4"
+            VerticalTextAlignment="Center"
+            HorizontalTextAlignment="Center"
+            TextColor="#FFFFFF"/>
+        
+        <Label
+            x:Name="labelUID"
+            Text="[uid]"
+            FontSize="18"
+            FontAttributes="Bold"
+            Grid.Row="2"
+            Grid.Column="1"
+            Grid.ColumnSpan="4"
+            VerticalTextAlignment="Start"
+            HorizontalTextAlignment="Center"
+            TextColor="#FFFFFF"/>
+
+        <Button
+            x:Name="buttonPassword"
+            Text="Strings.buttonPassword1"
+            Grid.Row="3"
+            Grid.Column="1"
+            Grid.ColumnSpan="2"
+            FontSize="Medium"/>
+
+        <Button
+            x:Name="buttonRecover"
+            Text="Strings.buttonRecover"
+            Grid.Row="3"
+            Grid.Column="3"
+            Grid.ColumnSpan="2"
+            FontSize="Medium"/>
+
+        <BoxView
+            Grid.Row="4"
+            Grid.Column="1"
+            Grid.ColumnSpan="4"
+            Grid.RowSpan="6"
+            BackgroundColor="#50000000"/>
+        
+        <ScrollView
+            Grid.Row="4"
+            Grid.Column="1"
+            Grid.ColumnSpan="4"
+            Grid.RowSpan="6">
+            <StackLayout
+                x:Name="stackLayout"
+                Margin="0"
+                Padding="5">
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

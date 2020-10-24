@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PositivityZone.ModeratePage"
+             BackgroundImageSource="bg">
+
+    <Grid Padding="25">
+        <!-- Columns: 6; Rows: 11 -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Label
+            x:Name="labelModerate"
+            Text="Strings.labelModerate"
+            Grid.Column="0"
+            Grid.ColumnSpan="6"
+            Grid.Row="0"
+            FontSize="24"
+            FontAttributes="Bold"
+            VerticalTextAlignment="End"
+            HorizontalTextAlignment="Center"/>
+
+        <Editor
+            x:Name="textBox"
+            Grid.Column="0"
+            Grid.ColumnSpan="6"
+            Grid.Row="1"
+            Grid.RowSpan="9"
+            BackgroundColor="#40000000"
+            IsReadOnly="True"/>
+
+        <Button
+            x:Name="buttonReturn"
+            Text="Strings.buttonReturn"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            Grid.Row="10"/>
+
+        <Button
+            x:Name="buttonYes"
+            Text="Strings.buttonYes;"
+            Grid.Column="2"
+            Grid.Row="10"/>
+
+        <Button
+            x:Name="buttonNo"
+            Text="Strings.buttonNo"
+            Grid.Column="3"
+            Grid.Row="10"/>
+
+        <Button
+            x:Name="buttonSkip"
+            Text="Strings.buttonSkip"
+            Grid.Column="4"
+            Grid.ColumnSpan="2"
+            Grid.Row="10"/>
+
+    </Grid>
+</ContentPage>

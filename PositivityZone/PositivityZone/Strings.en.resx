@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="buttonAnswer" xml:space="preserve">
+    <value>Answer</value>
+  </data>
+  <data name="buttonModerate" xml:space="preserve">
+    <value>Moderate</value>
+  </data>
+  <data name="buttonNo" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="buttonPassword1" xml:space="preserve">
+    <value>Set password</value>
+  </data>
+  <data name="buttonPassword2" xml:space="preserve">
+    <value>Change password</value>
+  </data>
+  <data name="buttonRecover" xml:space="preserve">
+    <value>Recover</value>
+  </data>
+  <data name="buttonReturn" xml:space="preserve">
+    <value>Return</value>
+  </data>
+  <data name="buttonSend" xml:space="preserve">
+    <value>Send</value>
+  </data>
+  <data name="buttonSkip" xml:space="preserve">
+    <value>Skip</value>
+  </data>
+  <data name="buttonVent" xml:space="preserve">
+    <value>Vent</value>
+  </data>
+  <data name="buttonYes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="labelAnswer" xml:space="preserve">
+    <value>Your answer</value>
+  </data>
+  <data name="labelLanguage" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="labelModerate" xml:space="preserve">
+    <value>Is it appropiate?</value>
+  </data>
+  <data name="labelNoUserEntries" xml:space="preserve">
+    <value>You haven't posted anything.</value>
+  </data>
+  <data name="labelOptions" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="labelTitle" xml:space="preserve">
+    <value>Positivity Zone</value>
+  </data>
+  <data name="labelUIDInfo" xml:space="preserve">
+    <value>Your UID:</value>
+  </data>
+  <data name="labelUser" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="labelVent" xml:space="preserve">
+    <value>What's on your mind?</value>
+  </data>
+  <data name="labelVent2" xml:space="preserve">
+    <value>Vent</value>
+  </data>
+  <data name="labelVersion" xml:space="preserve">
+    <value>Version: </value>
+  </data>
+  <data name="textAnswer" xml:space="preserve">
+    <value>Answer:</value>
+  </data>
+  <data name="textAnswered" xml:space="preserve">
+    <value>Answered: </value>
+  </data>
+  <data name="textAnswerError" xml:space="preserve">
+    <value>Oops... Couldn't send your answer.</value>
+  </data>
+  <data name="textAnswerInfo" xml:space="preserve">
+    <value>Here you can answer on vents that other people posted. Please remember to follow the rules:
+- no personal details
+- full anonymity
+- no toxicity
+- no profanity</value>
+  </data>
+  <data name="textAnswerSuccess" xml:space="preserve">
+    <value>Your answer has been sent. It is awaiting approval. Thank you!</value>
+  </data>
+  <data name="textApproved" xml:space="preserve">
+    <value>You checked and approved an entry!</value>
+  </data>
+  <data name="textDisapproved" xml:space="preserve">
+    <value>You checked and disapproved an entry!</value>
+  </data>
+  <data name="textEntry" xml:space="preserve">
+    <value>Vent ID: </value>
+  </data>
+  <data name="textError" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="textFirstLaunch" xml:space="preserve">
+    <value>Here is your safe space. You can express your feelings, give advices and enforce the rules!</value>
+  </data>
+  <data name="textModerate" xml:space="preserve">
+    <value>There's nothing to moderate! Come back later.</value>
+  </data>
+  <data name="textModerateInfo" xml:space="preserve">
+    <value>Your job is to check if vents and answers follow the rules:
+- no personal details
+- full anonymity
+- no toxicity
+- no profanity
+Be responsible. Decide the fate of the entry only when you're certain.</value>
+  </data>
+  <data name="textModError" xml:space="preserve">
+    <value>Oops. Something went wrong and we couldn't send your approval/disapproval.</value>
+  </data>
+  <data name="textNo" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="textNoVents" xml:space="preserve">
+    <value>There are no vents to answer. Come back later.</value>
+  </data>
+  <data name="textRead" xml:space="preserve">
+    <value>Please read!</value>
+  </data>
+  <data name="textRules" xml:space="preserve">
+    <value>Rules:
+- no personal details
+- full anonymity
+- no toxicity
+- no profanity</value>
+  </data>
+  <data name="textSuccess" xml:space="preserve">
+    <value>Success</value>
+  </data>
+  <data name="textVentInfo" xml:space="preserve">
+    <value>There are some rules that you must obey:
+- no personal details
+- full anonymity
+- no toxicity
+- no profanity
+You'll need to wait for your vent to be approved by someone else. If you don't follow the rules, you will get banned.</value>
+  </data>
+  <data name="textYes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+</root>

@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PositivityZone.Pages.UserEntryPage"
+             BackgroundImageSource="bg">
+
+    <!-- Add small label informing about vent count (1/2 etc)-->
+
+    <Grid Margin="25">
+        <!-- Columns: 6; Rows: 11 -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <ImageButton
+            x:Name="buttonBack"
+            Grid.Row="0"
+            Grid.Column="0"
+            Source="backarrow_icon"
+            BackgroundColor="#00FFFFFF"/>
+
+        <Label
+            x:Name="labelVent"
+            Text="Strings.labelVent2"
+            Grid.Row="1"
+            Grid.Column="0"
+            Grid.ColumnSpan="6"
+            FontSize="25"
+            FontAttributes="Bold"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center"/>
+
+        <Editor
+            x:Name="textBoxVent"
+            Grid.Row="2"
+            Grid.RowSpan="4"
+            Grid.Column="0"
+            Grid.ColumnSpan="6"
+            BackgroundColor="#40000000"
+            IsReadOnly="True"/>
+
+        <Label
+            x:Name="labelAnswer"
+            Text="Strings.labelAnswer"
+            Grid.Row="6"
+            Grid.Column="0"
+            Grid.ColumnSpan="6"
+            FontSize="25"
+            FontAttributes="Bold"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="End"/>
+
+        <Editor
+            x:Name="textBoxAnswer"
+            Grid.Row="7"
+            Grid.RowSpan="4"
+            Grid.Column="0"
+            Grid.ColumnSpan="6"
+            BackgroundColor="#40000000"/>
+    </Grid>
+</ContentPage>

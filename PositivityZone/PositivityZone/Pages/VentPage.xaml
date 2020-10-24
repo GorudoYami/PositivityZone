@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PositivityZone.VentPage"
+             BackgroundImageSource="bg">
+    <Grid Padding="25">
+        <!-- Columns: 6; Rows: 11 -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Label
+            x:Name="labelVent"
+            Grid.Column="0"
+            Grid.ColumnSpan="6"
+            Grid.Row="0"
+            FontSize="24"
+            FontAttributes="Bold"
+            VerticalTextAlignment="Center"
+            HorizontalTextAlignment="Center"/>
+
+        <Editor
+            x:Name="textBox"
+            Grid.Column="0"
+            Grid.ColumnSpan="6"
+            Grid.Row="1"
+            Grid.RowSpan="9"
+            BackgroundColor="#40000000"/>
+        
+        <Button
+            x:Name="buttonReturn"
+            Grid.Column="0"
+            Grid.ColumnSpan="3"
+            Grid.Row="10"/>
+
+        <Button
+            x:Name="buttonSend"
+            Grid.Column="3"
+            Grid.ColumnSpan="3"
+            Grid.Row="10"/>
+
+    </Grid>
+
+</ContentPage>

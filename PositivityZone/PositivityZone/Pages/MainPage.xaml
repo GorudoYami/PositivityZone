@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- Add background image / animation -->
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PositivityZone.MainPage"
+             BackgroundImageSource="bg">
+    <Grid>
+        <!-- Columns: 5; Rows: 7 -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        
+
+        <ImageButton
+            x:Name="buttonOptions"
+            Grid.Row="0"
+            Grid.Column="0"
+            Padding="15"
+            Source="gear_icon"
+            BackgroundColor="#00FFFFFF"/>
+
+        <ImageButton
+            x:Name="buttonUser"
+            Grid.Row="0"
+            Grid.Column="4"
+            Padding="15"
+            Source="user_icon"
+            BackgroundColor="#00FFFFFF"/>
+
+        <Label
+            x:Name="labelTitle"
+            Grid.Row="1"
+            Grid.Column="1"
+            Grid.ColumnSpan="3"
+            Grid.RowSpan="2"
+            FontSize="50"
+            HorizontalTextAlignment="Center"/>
+
+        <Button
+            x:Name="buttonVent"
+            Grid.Row="3"
+            Grid.Column="1"
+            Grid.ColumnSpan="3"
+            FontSize="24"/>
+
+        <Button
+            x:Name="buttonAnswer"
+            Grid.Row="4"
+            Grid.Column="1"
+            Grid.ColumnSpan="3"
+            FontSize="24"/>
+
+        <Button
+            x:Name="buttonModerate"
+            Grid.Row="5"
+            Grid.Column="1"
+            Grid.ColumnSpan="3"
+            FontSize="24"/>
+    </Grid>
+
+</ContentPage>

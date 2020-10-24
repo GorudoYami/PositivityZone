@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PositivityZone.Dialogs.RecoveryDialog" BackgroundColor="#00FFFFFF">
+    <Grid BackgroundColor="#00CFCFFC">
+        <!-- 5 cols 15 rows-->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+                
+        <BoxView Color="#40000000"                
+                 Grid.Row="1"
+                 Grid.RowSpan="3"
+                 Grid.Column="1"
+                 Grid.ColumnSpan="3"
+                 />
+
+        <Label
+            Text="UID"
+            Grid.Row="1"
+            Grid.Column="1"
+            TextColor="#FFFFFF"
+            BackgroundColor="#40000000"
+            VerticalOptions="End"
+            HorizontalTextAlignment="End"
+            WidthRequest="100"
+            HeightRequest="40" 
+            VerticalTextAlignment="Center"
+            />
+
+        <Entry
+            x:Name="inputUID"
+            Grid.Row="1"
+            Grid.Column="2"
+            Grid.ColumnSpan="2"
+            BackgroundColor="#40000000"
+            VerticalOptions="End"
+            WidthRequest="100"
+            HeightRequest="40"/>
+
+        <Label
+            Text="Password"
+            Grid.Row="2"
+            Grid.Column="1"
+            TextColor="#FFFFFF"
+            BackgroundColor="#40000000"
+            VerticalOptions="Start"
+            HorizontalTextAlignment="End"
+            WidthRequest="100"
+            HeightRequest="40" 
+            VerticalTextAlignment="Center"/>
+        <Entry
+            x:Name="inputPassword"
+            Grid.Row="2"
+            Grid.Column="2"
+            Grid.ColumnSpan="2"
+            BackgroundColor="#40000000"
+            VerticalOptions="Start"
+            WidthRequest="100"
+            HeightRequest="40"
+            IsPassword="True"/>
+
+        <Button
+            x:Name="confirmRecoveryDataButton"
+            Text="Confirm"
+            Grid.Row="3"
+            Grid.Column="1"
+            VerticalOptions="Center"
+            Grid.ColumnSpan="3"
+            HeightRequest="40"/>
+
+        
+        <!-- 2nd Box-->
+        <BoxView x:Name="box"
+                 Color="#40000000"                
+                 Grid.Row="6"
+                 Grid.RowSpan="3"
+                 Grid.Column="1"
+                 Grid.ColumnSpan="3"
+                 />
+
+        <Label
+            x:Name="labelSetPassNotification"
+            Text="Please set a new Recovery Password!"
+            Grid.Row="5"
+            Grid.Column="1"
+            Grid.ColumnSpan="3"
+            VerticalOptions="Fill"
+            HorizontalOptions="Fill"
+            HorizontalTextAlignment="Center"
+            BackgroundColor="#40000000"
+            TextColor="#4169E1"/>
+        
+        <Label
+            x:Name="previousPassLabel"
+            Text="Previous Password"
+            Grid.Row="6"
+            Grid.Column="1"
+            TextColor="#FFFFFF"
+            BackgroundColor="#40000000"
+            VerticalOptions="End"
+            HorizontalTextAlignment="End"
+            WidthRequest="100"
+            HeightRequest="40" 
+            VerticalTextAlignment="Center"
+            IsVisible="False"
+            />
+
+        <Entry
+            x:Name="previousPass"
+            Grid.Row="6"
+            Grid.Column="2"
+            Grid.ColumnSpan="2"
+            BackgroundColor="#40000000"
+            VerticalOptions="End"
+            WidthRequest="100"
+            HeightRequest="40"
+            IsPassword="True"
+            IsVisible="False"/>
+        
+        <Label
+            x:Name="firstPassLabel"
+            Text="Password"
+            Grid.Row="6"
+            Grid.Column="1"
+            TextColor="#FFFFFF"
+            BackgroundColor="#40000000"
+            VerticalOptions="End"
+            HorizontalTextAlignment="End"
+            WidthRequest="100"
+            HeightRequest="40" 
+            VerticalTextAlignment="Center"
+            />
+
+        <Entry
+            x:Name="firstPass"
+            Grid.Row="6"
+            Grid.Column="2"
+            Grid.ColumnSpan="2"
+            BackgroundColor="#40000000"
+            VerticalOptions="End"
+            WidthRequest="100"
+            HeightRequest="40"
+            IsPassword="True"/>
+
+        <Label
+            x:Name="secondPassLabel"
+            Text="Repeat Password"
+            Grid.Row="7"
+            Grid.Column="1"
+            TextColor="#FFFFFF"
+            BackgroundColor="#40000000"
+            VerticalOptions="Start"
+            HorizontalTextAlignment="End"
+            WidthRequest="100"
+            HeightRequest="40" 
+            VerticalTextAlignment="Center"/>
+        <Entry      
+            x:Name="secondPass"
+            Grid.Row="7"
+            Grid.Column="2"
+            Grid.ColumnSpan="2"
+            BackgroundColor="#40000000"
+            VerticalOptions="Start"
+            WidthRequest="100"
+            HeightRequest="40"
+            IsPassword="True"/>
+
+        <Button
+            x:Name="confirmSetPassword"
+            Text="SetPassword"
+            Grid.Row="8"
+            Grid.Column="1"
+            VerticalOptions="Center"
+            Grid.ColumnSpan="3"
+            HeightRequest="40"/>
+
+    </Grid>
+</ContentPage>

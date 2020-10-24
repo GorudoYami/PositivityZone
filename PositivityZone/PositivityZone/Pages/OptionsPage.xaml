@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PositivityZone.Pages.OptionsPage"
+             BackgroundImageSource="bg">
+    <Grid>
+        <!-- Columns: 6; Rows: 7 -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <ImageButton
+            x:Name="buttonBack"
+            Grid.Row="0"
+            Grid.Column="0"
+            Source="backarrow_icon"
+            BackgroundColor="#00FFFFFF"
+            Margin="10,0,0,0"/>
+
+        <Label
+            x:Name="labelOptions"
+            FontSize="25"
+            FontAttributes="Bold"
+            Grid.Row="0"
+            Grid.Column="2"
+            Grid.ColumnSpan="2"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center"/>
+
+        <Label
+            x:Name="labelLanguage"
+            FontSize="20"
+            Grid.Row="0"
+            Grid.Column="1"
+            Grid.ColumnSpan="4"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="End"
+            TextColor="#404040"/>
+
+        <ImageButton
+            x:Name="buttonLangPL"
+            Source="pl_icon"
+            Padding="5"
+            Grid.Row="1"
+            Grid.RowSpan="2"
+            Grid.Column="1"
+            Grid.ColumnSpan="2"
+            BackgroundColor="#00FFFFFF"
+            Margin="0,10"/>
+
+        <ImageButton
+            x:Name="buttonLangEN"
+            Source="gb_icon"
+            Padding="5"
+            Grid.Row="1"
+            Grid.RowSpan="2"
+            Grid.Column="3"
+            Grid.ColumnSpan="2"
+            BackgroundColor="#00FFFFFF"
+            Margin="0,10"/>
+
+        <Label
+            Text="Strings.labelVersion"
+            Padding="2"
+            x:Name="labelVersion"
+            Grid.Row="6"
+            Grid.Column="0"
+            Grid.ColumnSpan="6"
+            FontSize="15"
+            TextColor="#404040"
+            HorizontalTextAlignment="Start"
+            VerticalTextAlignment="End"/>
+
+    </Grid>
+
+</ContentPage>
