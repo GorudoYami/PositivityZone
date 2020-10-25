@@ -25,7 +25,7 @@ namespace PositivityZone {
             buttonOptions.Clicked += ButtonOptions_Clicked;
             buttonModerate.Clicked += ButtonModerate_Clicked;
 
-            // Doesn't seem to work. Dogshit.
+            // Doesn't seem to work.
             Application.Current.RequestedThemeChanged += (obj, args) => {
                 Application.Current.UserAppTheme = OSAppTheme.Light;
             };
