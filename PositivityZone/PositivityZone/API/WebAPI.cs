@@ -23,9 +23,7 @@ namespace PositivityZone.API {
         private RestClient Client { get; set; }
         private const string ApiKey = "a75a7044beb042103b734791ee8d4b5b58a66198d30e3e89ae87f914830b56639325831237e64b796013fd67294d66e7b8e320740681a3566b0b4bec99ea95c3";
         public WebAPI() {
-            Client = new RestClient("https://10.0.1.5:5001/api");
-            // Remove at production
-            Client.RemoteCertificateValidationCallback = (sender, certificate, chain, sslPolicyErrors) => true;
+            Client = new RestClient("https://gorudoyami.net:5001/api");
         }
 
         public void PostUID() {

@@ -74,6 +74,17 @@
             Margin="0,10"/>
 
         <Label
+            Text="Background:"
+            x:Name="labelBG"
+            Grid.Row="3"
+            Grid.Column="0"
+            Grid.ColumnSpan="6"
+            FontSize="15"
+            TextColor="#404040"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center"/>
+
+        <Label
             Text="Strings.labelVersion"
             Padding="2"
             x:Name="labelVersion"

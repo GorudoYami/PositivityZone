@@ -21,8 +21,13 @@ namespace PositivityZone.Pages {
             buttonBack.Clicked += ButtonBack_Clicked;
             buttonInfo.Clicked += ButtonInfo_Clicked;
             buttonRecover.Clicked += ButtonRecover_Clicked;
+            buttonPassword.Clicked += ButtonPassword_Clicked;
             labelUID.Text = "UID: " + Preferences.Get("UID", "N/A");
             RetranslateUI();
+        }
+
+        private async void ButtonPassword_Clicked(object sender, EventArgs e) {
+            await DisplayAlert("Sorry!", "This feature is not yet impemented!", "OK");
         }
 
         override protected async void OnAppearing() {
@@ -57,7 +62,8 @@ namespace PositivityZone.Pages {
         }
 
         private async void ButtonRecover_Clicked(object sender, EventArgs e) {
-            await Navigation.PushModalAsync(new RecoveryDialog(ref api));
+            await DisplayAlert("Sorry!", "This feature is not yet impemented!", "OK");
+            //await Navigation.PushModalAsync(new RecoveryDialog(ref api));
         }
 
         private async void ButtonBack_Clicked(object sender, EventArgs args) {

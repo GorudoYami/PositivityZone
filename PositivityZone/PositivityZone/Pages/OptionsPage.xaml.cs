@@ -52,6 +52,7 @@ namespace PositivityZone.Pages {
             labelOptions.Text = Strings.labelOptions;
             labelLanguage.Text = Strings.labelLanguage;
             labelVersion.Text = Strings.labelVersion + "0.0.1";
+            labelBG.Text = "Background and icon:\nhttps://pinterest.com/pin/726486983632169506/\nOnly for educational purpouses.";
         }
     }
 }
